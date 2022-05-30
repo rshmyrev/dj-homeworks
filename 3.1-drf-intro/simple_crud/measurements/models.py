@@ -25,4 +25,5 @@ class Measurement(AutoDateTime):
     """Измерение температуры на объекте."""
 
     value = models.FloatField()
+    image = models.ImageField(blank=True)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
