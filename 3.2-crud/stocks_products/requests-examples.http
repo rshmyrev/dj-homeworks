@@ -51,6 +51,21 @@ Content-Type: application/json
   ]
 }
 
+### создание еще одного склада
+POST {{baseUrl}}/stocks/
+Content-Type: application/json
+
+{
+  "address": "новый",
+  "positions": [
+    {
+      "product": 3,
+      "quantity": 100,
+      "price": 180
+    }
+  ]
+}
+
 ### обновляем записи на складе
 PATCH {{baseUrl}}/stocks/3/
 Content-Type: application/json
