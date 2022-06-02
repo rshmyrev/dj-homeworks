@@ -22,7 +22,7 @@ Content-Type: application/json
 Authorization: Token 8cef65f70101a86a4036b660d9a2f1d53fd0e728
 
 {
-  "title": "Объявление №2",
+  "title": "Объявление №3",
   "description": "От пользователя №2"
 }
 
@@ -35,9 +35,10 @@ Content-Type: application/json
   "description": "Нет токена"
 }
 
-### TODO: попытка поменять объявление
+### TODO: попытка поменять объявление - done
 PATCH {{baseUrl}}/advertisements/1/
 Content-Type: application/json
+#Authorization: Token 05fbee61cfa6d2b96d95eee46cbbbf1494f92be3
 Authorization: Token 8cef65f70101a86a4036b660d9a2f1d53fd0e728
 
 {
